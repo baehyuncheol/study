@@ -8,7 +8,7 @@
     <meta property="og:title" content="재미로 보는 객관성 테스트">
     <meta property="og:description" content="나의 객관성이 어느정도인지 알아보자">
     <meta property="og:image" content="./img/question.jpg">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -32,8 +32,8 @@
         <section id="view" class="mx-auto px-3 mt-2" style="display: none;">
             <div id="viewTitle" >
                 <p class="fs-5 lh-base">출장을 가던 중 사거리 교차로에서 교통사고가 발생했다.<Br>
-                    경찰을 불렀고 크게 다친 사람은 없었으며, 사고차에서 내린 운전자들이 사과를 하였다.<Br>
-                    사고 원인이 신호위반으로 생각되며 과실여부를 판단 중이라 들었다.</p>
+                    경찰을 불렀고 크게 다친 사람은 없었으며, 사고 차에서 내린 운전자들이 사과를 하였다.<Br>
+                    사고 원인이 신호위반으로 생각되며 과실 여부를 판단 중이라 들었다.</p>
             </div>
             <div class="status mx-auto mt-1">
                 <div class="statusBar"></div>
@@ -52,6 +52,9 @@
             <h1>객관성 테스트 결과는?</h1>
             <div id="resultVal" class="fs-1 mx-auto px-3 mt-5"></div>
             <div id="resultTxt" class="mx-auto px-3 mt-5"></div>
+            <br>
+            <br>
+            <button onclick="layer_popup()" class="btn btn-outline-warning p-3">다시하기</button>
             <br>
             <br>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -74,6 +77,26 @@
         <script src="./js/question.js"></script>
         <script src="./js/result.js"></script>
         <script src="./js/view.js"></script>
+    </div>
+    <div class="dim-layer" >
+        <div class="dimBg"></div>
+        <div id="layer2" class="pop-layer">
+            <div class="pop-container">
+                <div class="pop-conts">
+                    <!--content //-->
+                    <br>
+                        <ins class="kakao_ad_area" style="display:none;" 
+                        data-ad-unit    = "DAN-Uigyirrvif96Nirg" 
+                        data-ad-width   = "300" 
+                        data-ad-height  = "250"></ins> 
+                    <Br>
+                    <div class="btn-r">
+                        <button onClick="window.location.reload()" class="btn btn-outline-warning p-3">닫기</button>
+                    </div>
+                    <!--// content-->
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
